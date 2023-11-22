@@ -40,9 +40,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
         // Handle touch event actions
         switch(event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                player.setPosition((double) event.getX(), (double) event.getY());
-                return true;
+            case MotionEvent.ACTION_DOWN://Keeping code for now but I have not found any functionality for this (removing ACTION_DOWN doesn't affect player movement)
             case MotionEvent.ACTION_MOVE:
                 player.setPosition((double) event.getX(), (double) event.getY());
                 return true;
